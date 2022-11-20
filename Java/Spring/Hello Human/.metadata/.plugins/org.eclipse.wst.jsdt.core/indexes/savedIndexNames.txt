@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+C:\PNSA-Cohort3\Java\Spring\Hello Human\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+315317942.index

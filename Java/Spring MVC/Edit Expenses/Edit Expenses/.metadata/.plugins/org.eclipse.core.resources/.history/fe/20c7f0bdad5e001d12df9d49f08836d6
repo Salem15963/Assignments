@@ -1,0 +1,52 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+		<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<script type="text/javascript" src="js/app.js"></script>
+<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/main.css"/>
+<script src="/webjars/jquery/jquery.min.js"></script>
+<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+ 
+
+<div class="container">
+  <h2>All Books</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Language</th>
+        <th>Number Of Pages</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>${books.title}</td>
+        <td>john@example.com</td>
+        <td>55</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>${book.title}</td>
+        <td>mary@example.com</td>
+        <td>55</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>${book.title}</td>
+        <td>july@example.com</td>
+        <td>55</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</html>

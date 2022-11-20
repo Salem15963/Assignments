@@ -1,0 +1,53 @@
+package com.codingdojo.booksapi.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.codingdojo.booksapi.models.Language;
+import com.codingdojo.booksapi.repositories.LanguageRepository;
+
+@Service
+public class ExpenseService {
+    // adding the expense repository as a dependency
+	private final LanguageRepository expenseRepository;
+    
+    public ExpenseService(LanguageRepository expenseRepository) {
+        this.expenseRepository = expenseRepository;
+    }
+    // returns all the expenses
+    public List<Language> allExpenses() {
+		return expenseRepository.findAll();
+    }
+    // creates a expense
+    public Language createExpense(Language b) {
+        return expenseRepository.save(b);
+    }
+    // retrieves a expense
+    public Language findExpense(Long id) {
+        Optional<Language> optionalExpense = expenseRepository.findById(id);
+        if(optionalExpense.isPresent()) {
+            return optionalExpense.get();
+        } else {
+            return null;
+        }
+    }
+
+	public Language updateExpense(Long id, String name, String creator, Integer version) {
+	     Language expense = findExpense(id);
+	     if(expense.getId()==id) {
+	    	 expense.setName(name);
+	    	 expense.setCreator(creator);
+	    	 expense.setVersion(version);
+	    	 return createExpense(expense);
+	     }
+	     else {
+	    	 return null;
+	     }
+	}
+
+	public void deleteexpense(Long id) {
+		expenseRepository.deleteById(id);
+	}
+}

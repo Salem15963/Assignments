@@ -1,0 +1,3 @@
+INDEX VERSION 1.4+C:\PNSA-Cohort3\Java\Spring\Fruity Loops\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2491499936.index
+4193936316.index

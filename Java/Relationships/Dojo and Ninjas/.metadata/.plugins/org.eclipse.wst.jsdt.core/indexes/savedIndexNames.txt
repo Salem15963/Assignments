@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\PNSA-Cohort3\Java\Relationships\Dojo and Ninjas\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2914469543.index
+2183988001.index
+1342925669.index
+1650838902.index
+791879244.index
+2252694723.index
+2556663290.index

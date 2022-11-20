@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\PNSA-Cohort3\Java\Relationships\Products And Categories\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1226771403.index
+\productsandcategories\src\main\java

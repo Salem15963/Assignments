@@ -1,0 +1,28 @@
+package com.example.DaikichiRoutes;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+@Controller
+public class MainController {
+	
+    @RequestMapping("/form")
+    public String form(){
+    	return "form.jsp";
+    }
+	
+	@RequestMapping("/Omikuji/form")
+	public String formm() {
+		return "show.jsp";
+	}
+	@RequestMapping("/Daikichi/lotto/6")
+	public String Oddlotto() {
+		return "You will take a grand journey in the near future, but be wary of tempting offers";
+	}
+	@RequestMapping("/Daikichi/lotto/37")
+	public String Evenlotto() {
+		return "You have enjoyed the fruits of your labor but now is a great time with family and friends";
+	}
+
+	
+}

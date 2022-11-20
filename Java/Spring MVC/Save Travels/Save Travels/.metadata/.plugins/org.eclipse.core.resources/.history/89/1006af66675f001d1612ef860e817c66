@@ -1,0 +1,44 @@
+package com.codingdojo.booksapi.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.codingdojo.booksapi.models.Expense;
+import com.codingdojo.booksapi.services.ExpenseService;
+
+@Controller
+public class ExpenseController {
+	@Autowired
+	ExpenseService expenseService;
+
+    @GetMapping("/expenses/{Id}")
+    public String index(Model model,@PathVariable("Id")Long Id) {
+    	
+    	System.out.println(Id);
+    	Expense expense = expenseService.findExpense(Id);
+    	System.out.println(expense);
+    	
+    	model.addAttribute("expense", expense);
+        return "show.jsp";
+    }
+	
+        
+        @RequestMapping("/expenses")
+        public String index(Model model) {
+            List<Expense> expenses = expenseService.allExpenses();
+            model.addAttribute("expenses", expenses);
+            return "index.jsp";
+        }
+    }
+
+ 
+
+
+
+

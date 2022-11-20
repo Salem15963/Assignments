@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\PNSA-Cohort3\Java\Spring\Ninja Gold Game\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3135260604.index
+2152084512.index
+1883350588.index
+152786074.index
+175895609.index

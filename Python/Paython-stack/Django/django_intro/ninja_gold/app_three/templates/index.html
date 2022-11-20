@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Gold</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+    <div class="gold_counter">
+        <h3>Your Gold</h3>
+        <div class="gold_box">{{ request.session.gold_counter }}</div>
+    </div>
+    <form action="collect/" method="post" class="items" name="items">
+        {% csrf_token %}
+        <div class="boxes">
+            <h2 value="farm">Farm</h2>
+            <p>(earn 10-20 gold)</p>
+            <button type="submit" name="find_gold1">Find Gold!</button>
+        </div>
+        <div class="boxes">
+            <h2 value="cave">Cave</h2>
+            <p>(earn 10-20 gold)</p>
+            <button type="submit" name="find_gold2">Find Gold!</button>
+        </div>
+        <div class="boxes">
+            <h2 value="house">House</h2>
+            <p>(earn 10-20 gold)</p>
+            <button type="submit" name="find_gold3">Find Gold!</button>
+        </div>
+        <div class="boxes">
+            <h2 value="quest">Quest</h2>
+            <p>(earn/takes 0-50 gold)</p>
+            <button type="submit" name="find_gold4">Find Gold!</button>
+        </div>
+    </form>
+    <h2 class="log">Activites:</h2>
+    <div class="activites">{{ request.session.activities }}</div>
+    <form action="reset/" method="post">
+        {% csrf_token %}
+        <button type="submit" name="reset">Reset</button>
+    </form>
+</body>
+</html>

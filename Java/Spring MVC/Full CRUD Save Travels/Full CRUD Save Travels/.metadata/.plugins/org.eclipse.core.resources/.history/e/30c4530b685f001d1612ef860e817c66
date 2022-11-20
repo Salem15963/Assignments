@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-10 justify-content-center">
+            <div class="row">
+                <h1 class="col">Add a new expense:</h1>
+                <a class="col-2" class="text-right btn btn-sm btn-outline-primary" href="/expenses">Go Back</a>
+            </div>
+
+            <form class="form-group" action="/shows/new" method="post">
+                {% csrf_token %}
+                
+                <p class="font-weight-bold">Expense Name</p>
+                <input class="form-control" type="text" name="expense">
+                
+                <p class="font-weight-bold">Vendor</p>
+                <input class="form-control" type="text" name='vendor'>
+                
+                <p class="font-weight-bold">Amount</p>
+                <input type="text" name="amount">
+                
+                <p class="font-weight-bold">Description</p>
+                <textarea class="form-control" name="description" cols="30" rows="10"></textarea>
+                
+                <input class="btn btn-outline-secondary m-2" type="submit" value="add">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

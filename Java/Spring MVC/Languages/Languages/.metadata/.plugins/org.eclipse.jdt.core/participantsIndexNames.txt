@@ -1,0 +1,15 @@
+INDEX VERSION 1.131
+C:\PNSA-Cohort3\Java\Spring MVC\Full CRUD Save Travels\Full CRUD Save Travels\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1022019700.index
+\booksapi\src\main\java
+C:\PNSA-Cohort3\Java\Spring MVC\Save Travels\Save Travels\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1022019700.index
+\booksapi\src\main\java
+C:\PNSA-Cohort3\Java\Spring MVC\Rendering all books\Rendering all Books\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1022019700.index
+\booksapi\src\main\java
+C:\PNSA-Cohort3\Java\Spring MVC\Rendering Books\Rendering Books\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1022019700.index
+\booksapi\src\main\java
+C:\PNSA-Cohort3\Java\Spring MVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1022019700.index
+\booksapi\src\main\java
+C:\PNSA-Cohort3\Java\Spring MVC\Edit Expenses\Edit Expenses\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1022019700.index
+\booksapi\src\main\java
+C:\PNSA-Cohort3\Java\Spring MVC\Languages\Languages\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1022019700.index
+\booksapi\src\main\java

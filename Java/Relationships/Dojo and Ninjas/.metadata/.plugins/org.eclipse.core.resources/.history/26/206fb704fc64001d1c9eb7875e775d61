@@ -1,0 +1,30 @@
+package com.example.demo.models;
+
+import java.sql.Date;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="ninjas")
+public class Ninja {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String firstName;
+    private String lastName;
+    private Integer age;
+    @Column(updatable=false)
+    private Date createdAt;
+    private Date updatedAt;
+    @ManyToOne(mappedBy="ninjas", cascade=CascadeType.ALL, fetch=FetchType.LAZY)
+    private Dojo dojo;
+    
+}

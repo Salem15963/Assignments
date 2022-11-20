@@ -1,0 +1,49 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ page isErrorPage="true" %>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-10 justify-content-center">
+            <div class="row">
+                <h1 class="col">Add Expenses:</h1>
+                <a class="col-2" class="text-right btn btn-sm btn-outline-primary" href="/expenses">Go Back</a>
+            </div>
+
+<form:form action="/update/${expense.id}" method="post" modelAttribute="expense">
+    <input type="hidden" name="_method" value="put">
+
+    <p>
+        <form:label path="name">Expense</form:label>
+        <form:errors path="name"/>
+        <form:input path="name" placeholder="${Expense.name}"/>
+    </p>
+
+    <p>
+        <form:label path="vendor">Vendor</form:label>
+        <form:errors path="vendor"/>
+        <form:input path="vendor" placeholder="${Expense.vendor}"/>
+    </p>
+    <p>
+        <form:label path="amount">Amount</form:label>
+        <form:errors path="amount"/>     
+        <form:input type="number" path="amount" placeholder="${Expense.amount}"/>
+    </p> 
+        <p>
+        <form:label path="description">Description</form:label>
+        <form:errors path="description"/>
+        <form:textarea path="description" placeholder="${Expense.description}"/>
+    </p>   
+    <input type="submit" value="Submit"/>
+</form:form> 
+        </div>
+    </div>
+</body>
+</html>

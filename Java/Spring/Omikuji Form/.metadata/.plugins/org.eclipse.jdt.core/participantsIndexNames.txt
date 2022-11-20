@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\PNSA-Cohort3\Java\Spring\Omikuji Form\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2213765675.index
+\DaikichiRoutes\src\main\java

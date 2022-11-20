@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\PNSA-Cohort3\Java\Spring\Daikichi Path Variables\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2152084512.index
+2964067872.index
+328708446.index
+1005057998.index
+2744041090.index

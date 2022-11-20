@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="container">
+        <div class="col-10 justify-content-center">
+            <div class="row">
+                <h1 class="col">Add Dojo:</h1>
+            </div>
+<br>
+	<form:form action="dojos" method="post" modelAttribute="dojo">
+    <p>
+        <form:label  path="name">Name</form:label>
+        <form:errors path="name"/>
+        <form:input type="text" path="name"/>
+    </p>
+     
+    <input type="submit" value="Submit"/>
+	</form:form> 
+        </div>
+    </div>
+</div>
+</body>
+</html>

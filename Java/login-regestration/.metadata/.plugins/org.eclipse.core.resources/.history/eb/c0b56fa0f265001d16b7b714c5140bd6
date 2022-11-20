@@ -1,0 +1,5 @@
+package com.codindojo.login.controllers;
+
+public class HomeController {
+
+}

@@ -1,0 +1,88 @@
+package com.codingdojo.booksapi.controllers;
+
+import java.util.List;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.codingdojo.booksapi.models.Language;
+import com.codingdojo.booksapi.services.ExpenseService;
+
+@Controller
+public class LanguageController {
+	@Autowired
+	private LanguageService languageService;
+
+        
+        @GetMapping("/languages")
+        public String index(Model model) {
+            List<Language> languages = languageService.allLanguages();
+            model.addAttribute("languages", languages);
+            return "index.jsp";
+        }
+        
+        @GetMapping("/languages/add")
+        public String add(Model model,@ModelAttribute("language")Language language) {
+            List<Language> expenses = languageService.allLanguages();
+            model.addAttribute("languages", languages);
+            return "add.jsp";
+        }
+
+        @PostMapping("/create")
+        public String create(@Valid @ModelAttribute("language")Language language,BindingResult bindingResult ) 
+           
+        {
+        	   if (bindingResult.hasErrors()) {
+                   return "add.jsp"; }
+        	   
+        	   languageService.createExpense(language);
+            return "redirect:/languages";
+        }
+        
+        @GetMapping("/languages/{id}/edit")
+        public String edit(@PathVariable("id") Long id, Model model) {
+        	Language language = languageService.findExpense(id);
+            model.addAttribute("language", language);
+            return "edit.jsp";
+        }
+        
+        @PutMapping("/update/{id}")
+        public String update(@Valid @ModelAttribute("language") Language language, BindingResult result,
+        		@ModelAttribute("id") Long id,
+        		@RequestParam(value="name") String name,        		
+        		@RequestParam(value="creator") String creator,        		
+        		@RequestParam(value="version") Integer version      		
+        		) {
+            if (result.hasErrors()) {
+                return "/languages/{id}/edit.jsp";
+            } else {
+            	languagesService.updateExpense(id,name,creator,version);
+                return "redirect:/languages";
+            }
+        }
+        
+        @GetMapping("/languages/show/{id}")
+        public String showExpense(@PathVariable("id") Long expenseId, Model model) {
+        	model.addAttribute("Languages",languageService.findExpense(languageId));
+			return "show.jsp";
+        		
+        }
+        @DeleteMapping("/languages/{id}")
+        public String destroy(@PathVariable("id") Long id) {
+        	languageService.deleteexpense(id);
+            return "redirect:/languages";
+        }
+}
+
+

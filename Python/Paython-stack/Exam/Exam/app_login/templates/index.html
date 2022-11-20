@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="/registration/">
+            <h2>Registration</h2>
+            <form action="register/" method="post">
+            {% csrf_token %}
+                <div class="form-col">
+                    <div class="col" id="col">
+                        <label for="first_name">First Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your First Name" name="first_name" required>
+                    </div>
+                    <div class="col" id="col">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your Last Name" name="last_name" required>
+                    </div>
+                    <div class="col" id="col">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" placeholder="Enter your Email Address" name="email" required>
+                    </div>
+                    <div class="col" id="col">
+                        <label for="birthday">Birthday</label>
+                        <input type="date" class="form-control" placeholder="Enter your birthday" name="birthday">
+                    </div>
+                    <div class="col" id="col">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" placeholder="Choose your Password" name="password" required>
+                    </div>
+                    <div class="col" id="col">
+                        <label for="confirm_password">Password Confirm</label>
+                        <input type="password" class="form-control" placeholder="Confirm your Password" name="confirm_password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </form>
+        </div>
+        <div class="validater">
+            {% if messages %}
+            <ul class="messages">    
+            {% for message in messages %}    
+                <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+            {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        <div class="/login/">
+            <h2>Login</h2>
+            <form action="login/", method="post">
+            {% csrf_token %}
+                <div class="form-col">
+                    <div class="col" id="col">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" placeholder="Enter your Email Address" name="email" required>
+                    </div>
+                    <div class="col" id="col">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" placeholder="Enter your Password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- <input type="email" placeholder="Email" name="email">
+                <input type="password" placeholder="Password" name="password">
+                <button type="submit">Login</button> -->

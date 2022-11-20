@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan a tree</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="/registration/">
+            <h2>Registration</h2>
+            <form action="/dashboard" method="post">
+            {% csrf_token %}
+            
+            <h1>Arbitrarily plant a tree</h1>
+                <div class="form-col">
+                    <div class="col" id="col">
+                        <label for="species">Species:</label>
+                        <input type="text" class="form-control" placeholder="Enter the specie" name="species" required>
+                    </div>
+                    <div class="col" id="col">
+                        <label for="location">Location:</label>
+                        <input type="text" class="form-control" placeholder="Enter your location" name="location" required>
+                    <div class="col" id="col">
+                        <label for="reason">Reason:</label>
+                        <input type="text" class="form-control" placeholder="" name="reason" required>
+                    </div>
+                    <div class="col" id="col">
+                        <label for="date">Date Planted</label>
+                        <input type="date" class="form-control" placeholder="mm/dd/yyyy" name="birthday" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Plant</button>
+                </div>
+            </form>
+        </div>
+        <div class="validater">
+            {% if messages %}
+            <ul class="messages">    
+            {% for message in messages %}    
+                <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+            {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+
+    </div>
+</body>
+</html>

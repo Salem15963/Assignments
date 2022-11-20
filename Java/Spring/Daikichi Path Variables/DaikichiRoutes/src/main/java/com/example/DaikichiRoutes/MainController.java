@@ -1,0 +1,27 @@
+package com.example.DaikichiRoutes;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+@RestController
+
+public class MainController {
+	
+    @RequestMapping("/{track}/{module}/{lesson}")
+    public String showLesson(@PathVariable("track") String track, @PathVariable("module") String module, @PathVariable("lesson") String lesson){
+    	return "Track: " + track + ", Module: " + module + ", Lesson: " + lesson;
+    }
+	
+	@RequestMapping("/Daikichi/travel/Kyoto!")
+	public String Daikichi() {
+		return "Congratulation! You will soon travel to Kyoto!";
+	}
+	@RequestMapping("/Daikichi/lotto/6")
+	public String Oddlotto() {
+		return "You will take a grand journey in the near future, but be wary of tempting offers";
+	}
+	@RequestMapping("/Daikichi/lotto/37")
+	public String Evenlotto() {
+		return "You have enjoyed the fruits of your labor but now is a great time with family and friends";
+	}
+}

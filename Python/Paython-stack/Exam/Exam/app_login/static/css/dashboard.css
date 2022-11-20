@@ -1,0 +1,9 @@
+.dashboard1{
+    display: flex;
+    justify-items:end;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 115px;
+    width: 500px;
+}
+

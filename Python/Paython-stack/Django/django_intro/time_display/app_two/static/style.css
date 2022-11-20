@@ -1,0 +1,27 @@
+*{
+    margin: 0 auto;
+
+}
+
+h1{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    width: 385px;
+    margin-top: 10px;
+}
+
+div{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    width: 385px;
+    height: 115px;
+    margin-top: 10px;
+    font-size: xx-large;
+    flex-direction: column;
+}

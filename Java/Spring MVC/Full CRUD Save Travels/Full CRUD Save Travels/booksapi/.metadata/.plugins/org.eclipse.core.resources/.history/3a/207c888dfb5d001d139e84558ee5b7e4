@@ -1,0 +1,5 @@
+package com.codingdojo.booksapi.repository;
+
+public interface BookRepository Extend CrudRepository {
+
+}

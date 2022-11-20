@@ -1,0 +1,19 @@
+INDEX VERSION 1.131+C:\PNSA-Cohort3\Java\Spring\Counter\.metadata\.plugins\org.eclipse.jdt.core
+2912242151.index
+3621692672.index
+3769895941.index
+1592712638.index
+3005105566.index
+3854914038.index
+1006710399.index
+1865797976.index
+2899099116.index
+1357019869.index
+1315923664.index
+264754246.index
+201379883.index
+1004892902.index
+1798333813.index
+709445543.index
+1976390448.index
+2556469168.index

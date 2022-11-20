@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\PNSA-Cohort3\Java\Spring\Counter\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4275178400.index
+\counter\src\main\java

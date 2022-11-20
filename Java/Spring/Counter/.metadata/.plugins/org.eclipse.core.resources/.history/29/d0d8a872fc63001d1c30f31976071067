@@ -1,0 +1,5 @@
+package com.codingdojo.counter;
+
+public class HomeController {
+
+}

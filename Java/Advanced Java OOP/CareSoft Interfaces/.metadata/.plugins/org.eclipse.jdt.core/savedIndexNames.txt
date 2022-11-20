@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\PNSA-Cohort3\Java\Advanced Java OOP\CareSoft Interfaces\.metadata\.plugins\org.eclipse.jdt.core
+3621692672.index
+3893249895.index
+1865797976.index

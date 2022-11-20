@@ -1,0 +1,180 @@
+2022-11-02 15:19:15,738 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-11-02 15:20:01,713 [Worker-0: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:HelloHuman:0.0.1-SNAPSHOT @ C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\pom.xml.
+2022-11-02 15:20:02,766 [Worker-0: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /HelloHuman/src/main/java
+2022-11-02 15:20:02,767 [Worker-0: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /HelloHuman/src/main/resources
+2022-11-02 15:20:02,771 [Worker-0: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /HelloHuman/src/main/resources
+2022-11-02 15:20:02,775 [Worker-0: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /HelloHuman/src/test/java
+2022-11-02 15:20:04,855 [Worker-0: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 4 sec
+2022-11-02 15:20:04,859 [Worker-0: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-11-02 15:20:05,164 [Worker-0: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:HelloHuman:0.0.1-SNAPSHOT @ C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\pom.xml.
+2022-11-02 15:20:05,980 [Worker-0: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /HelloHuman/src/main/java
+2022-11-02 15:20:05,981 [Worker-0: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /HelloHuman/src/main/resources
+2022-11-02 15:20:05,981 [Worker-0: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /HelloHuman/src/main/resources
+2022-11-02 15:20:05,982 [Worker-0: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /HelloHuman/src/test/java
+2022-11-02 15:20:06,887 [Worker-0: Import Getting Started Content] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for HelloHuman
+2022-11-02 15:20:06,891 [Worker-0: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2022-11-02 15:20:07,371 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:20:07,371 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:20:07,376 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:20:07,395 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:20:07,400 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:20:07,400 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:20:07,400 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:20:07,401 [Worker-5: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of HelloHuman
+2022-11-02 15:20:07,402 [Worker-5: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for HelloHuman
+2022-11-02 15:20:07,406 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:20:07,407 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:20:11,299 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:20:11,299 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:20:11,300 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:20:11,301 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:20:11,304 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:20:11,304 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:20:11,304 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:21:24,185 [Worker-6: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:HomeController:0.0.1-SNAPSHOT @ C:\PNSA-Cohort3\Java\Spring\Hello Human\HomeController\pom.xml.
+2022-11-02 15:21:24,449 [Worker-6: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /HomeController/src/main/java
+2022-11-02 15:21:24,449 [Worker-6: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /HomeController/src/main/resources
+2022-11-02 15:21:24,452 [Worker-6: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /HomeController/src/main/resources
+2022-11-02 15:21:24,454 [Worker-6: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /HomeController/src/test/java
+2022-11-02 15:21:24,965 [Worker-6: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2022-11-02 15:21:24,967 [Worker-6: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-11-02 15:21:25,144 [Worker-6: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:HomeController:0.0.1-SNAPSHOT @ C:\PNSA-Cohort3\Java\Spring\Hello Human\HomeController\pom.xml.
+2022-11-02 15:21:25,437 [Worker-6: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /HomeController/src/main/java
+2022-11-02 15:21:25,437 [Worker-6: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /HomeController/src/main/resources
+2022-11-02 15:21:25,438 [Worker-6: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /HomeController/src/main/resources
+2022-11-02 15:21:25,438 [Worker-6: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /HomeController/src/test/java
+2022-11-02 15:21:25,792 [Worker-6: Import Getting Started Content] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for HomeController
+2022-11-02 15:21:25,796 [Worker-6: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-11-02 15:21:26,222 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:21:26,223 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:21:26,223 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:21:26,226 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:21:26,232 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:21:26,232 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:21:26,232 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HomeController\src\test\resources
+2022-11-02 15:21:26,233 [Worker-10: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of HomeController
+2022-11-02 15:21:26,233 [Worker-10: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for HomeController
+2022-11-02 15:21:26,238 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:21:26,238 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:21:36,916 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:21:36,916 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:21:36,916 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:21:36,916 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:21:36,919 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:21:36,919 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:21:36,919 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:22:09,736 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:HomeController:0.0.1-SNAPSHOT @ C:\PNSA-Cohort3\Java\Spring\Hello Human\HomeController\pom.xml.
+2022-11-02 15:22:09,992 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:22:09,993 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:22:09,993 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:22:09,995 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:22:09,998 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:22:09,998 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:22:09,998 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HomeController\src\test\resources
+2022-11-02 15:22:11,170 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:22:11,170 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:22:11,172 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:22:11,175 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:22:11,177 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:22:11,177 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:22:11,177 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HomeController\src\test\resources
+2022-11-02 15:22:48,597 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:22:48,597 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:22:48,599 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:22:48,611 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:22:48,617 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:22:48,617 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:22:48,617 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:29:17,656 [Worker-10: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:29:17,656 [Worker-10: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:29:17,658 [Worker-10: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:29:17,665 [Worker-10: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:29:17,668 [Worker-10: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:29:17,669 [Worker-10: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:29:17,669 [Worker-10: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:30:49,103 [Worker-8: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:30:49,103 [Worker-8: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:30:49,106 [Worker-8: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:30:49,135 [Worker-8: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:30:49,139 [Worker-8: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:30:49,139 [Worker-8: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:30:49,139 [Worker-8: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:33:55,866 [Worker-11: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:33:55,867 [Worker-11: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:33:55,868 [Worker-11: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:33:55,878 [Worker-11: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:33:55,881 [Worker-11: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:33:55,881 [Worker-11: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:33:55,881 [Worker-11: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:38:20,597 [Worker-12: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:38:20,597 [Worker-12: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:38:20,598 [Worker-12: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:38:20,615 [Worker-12: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:38:20,620 [Worker-12: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:38:20,620 [Worker-12: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:38:20,620 [Worker-12: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:39:32,970 [Worker-14: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:39:32,970 [Worker-14: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:39:32,971 [Worker-14: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:39:32,987 [Worker-14: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:39:32,990 [Worker-14: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:39:32,990 [Worker-14: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:39:32,990 [Worker-14: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:41:35,053 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:41:35,053 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:41:35,054 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:41:35,062 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:41:35,066 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:41:35,066 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:41:35,066 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:42:42,756 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:42:42,756 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:42:42,757 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:42:42,766 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:42:42,769 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:42:42,769 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:42:42,770 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:43:19,196 [Worker-13: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:43:19,196 [Worker-13: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:43:19,198 [Worker-13: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:43:19,211 [Worker-13: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:43:19,216 [Worker-13: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:43:19,216 [Worker-13: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:43:19,216 [Worker-13: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:44:09,644 [Worker-13: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:44:09,644 [Worker-13: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:44:09,645 [Worker-13: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:44:09,653 [Worker-13: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:44:09,657 [Worker-13: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:44:09,657 [Worker-13: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:44:09,657 [Worker-13: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:44:46,347 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:44:46,348 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:44:46,349 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:44:46,360 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:44:46,364 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:44:46,364 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:44:46,364 [Worker-17: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:45:43,902 [Worker-22: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:45:43,902 [Worker-22: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:45:43,903 [Worker-22: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:45:43,912 [Worker-22: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:45:43,916 [Worker-22: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:45:43,916 [Worker-22: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:45:43,916 [Worker-22: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:46:22,312 [Worker-23: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:46:22,312 [Worker-23: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:46:22,314 [Worker-23: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:46:22,321 [Worker-23: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:46:22,326 [Worker-23: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:46:22,326 [Worker-23: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:46:22,326 [Worker-23: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 15:57:13,431 [Worker-12: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:57:13,431 [Worker-12: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:57:13,432 [Worker-12: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:57:13,442 [Worker-12: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:57:13,445 [Worker-12: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:57:13,445 [Worker-12: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:57:13,445 [Worker-12: Launching HelloHuman - HelloHumanApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\PNSA-Cohort3\Java\Spring\Hello Human\HelloHuman\src\test\resources
+2022-11-02 16:41:54,006 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-11-03 16:04:44,069 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

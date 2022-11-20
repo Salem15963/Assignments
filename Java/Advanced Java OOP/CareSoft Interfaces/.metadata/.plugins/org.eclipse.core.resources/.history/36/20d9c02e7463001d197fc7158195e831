@@ -1,0 +1,5 @@
+package careSoft;
+
+public interface HIPAACompliantAdmin {
+
+}

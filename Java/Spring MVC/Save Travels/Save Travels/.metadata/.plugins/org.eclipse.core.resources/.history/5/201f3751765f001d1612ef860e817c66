@@ -1,0 +1,63 @@
+package com.codingdojo.booksapi.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+
+import com.codingdojo.booksapi.models.Expense;
+import com.codingdojo.booksapi.services.ExpenseService;
+
+@Controller
+public class ExpenseController {
+	@Autowired
+	ExpenseService expenseService;
+
+    @GetMapping("/expenses/{Id}")
+    public String index(Model model,@PathVariable("Id")Long Id) {
+    	
+    	System.out.println(Id);
+    	Expense expense = expenseService.findExpense(Id);
+    	System.out.println(expense);
+    	
+    	model.addAttribute("expense", expense);
+        return "show.jsp";
+    }
+	
+        
+        @RequestMapping("/expenses")
+        public String index(Model model) {
+            List<Expense> expenses = expenseService.allExpenses();
+            model.addAttribute("expenses", expenses);
+            return "index.jsp";
+        }
+        
+        @RequestMapping("/expenses/add")
+        public String add(Model model) {
+            List<Expense> expenses = expenseService.allExpenses();
+            model.addAttribute("expenses", expenses);
+            return "add.jsp";
+        }
+
+        @PostMapping("/expense/create")
+        public String create(
+            @RequestParam("name") String name,
+            @RequestParam("vendor") String vendor,
+            @RequestParam("amount") Integer amount,
+            @RequestParam("description")String description)
+        {
+            // CODE TO MAKE A NEW BOOK AND SAVE TO THE DB
+            Expense expense = new Expense(name, description, amount, vendor);
+            expenseService.createExpense(expense);
+            return "redirect:/expenses";
+        }
+}
+
+

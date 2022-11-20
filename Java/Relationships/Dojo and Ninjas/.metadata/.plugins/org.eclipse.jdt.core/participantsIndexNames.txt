@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\PNSA-Cohort3\Java\Relationships\Dojo and Ninjas\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2556663290.index
+\Relationships\src\main\java

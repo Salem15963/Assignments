@@ -1,0 +1,80 @@
+from django.db import models
+
+class Book(models.Model):
+
+	title = models.CharField(max_length=90)
+	description = models.CharField(max_length=255)
+	created_at = models.DateTimeField(auto_now_add=True)
+	updated_at = models.DateTimeField(auto_now=True)
+    
+
+class Publisher(models.Model):
+
+	name = models.CharField(max_length=90)
+	notes = models.CharField(max_length=255)
+	books = models.ManyToManyField(Book, related_name="publishers")
+	created_at = models.DateTimeField(auto_now_add=True)
+	updated_at = models.DateTimeField(auto_now=True)
+
+
+
+  > python manage.py makemigrations
+  > python manage.py migrate
+
+
+from Books.models import Books, Publisher
+
+
+>>> C_sharp = Book.objects.create(title="C sharp")
+>>> Java = Book.objects.create(title="Java")
+>>> Python = Book.objects.create(title="Python")
+>>> PHP = Book.objects.create(title="PHP")
+>>> Ruby = Book.objects.create(title="PHP")
+
+
+>>> Jane_Austen = Publisher.objects.create(name = "Jane Austen")
+>>> Emily_Dickinson = Publisher.objects.create(name = "Emily Dickinson")
+>>> Fyodor_Dostoevsky = Publisher.objects.create(name = "Fyodor Dostoevsky")
+>>> William_Shakespeare = Publisher.objects.create(name = "William Shakespeare")
+>>> Lau_Tzu = Publisher.objects.create(name = "Lau Tzu")
+
+
+>>> c = Book.objects.get(id=1)
+>>> c.title = "C#"
+>>> c.save()
+
+
+>>> c = Publisher.objects.get(id=4)
+>>> c.name = "Bill"
+>>> c.save()
+
+>>> Publisher.objects.get(id=1).books.add(Book.objects.get(id=1))
+>>> Publisher.objects.get(id=1).books.add(Book.objects.get(id=2))
+
+>>> Book.objects.get(id=1).publishers.add(Publisher.objects.get(id=1))
+>>> Book.objects.get(id=1).publishers.add(Publisher.objects.get(id=2))
+>>> Book.objects.get(id=2).publishers.add(Publisher.objects.get(id=2))
+>>> Book.objects.get(id=3).publishers.add(Publisher.objects.get(id=2))
+
+>>> Book.objects.get(id=1).publishers.add(Publisher.objects.get(id=4))
+>>> Book.objects.get(id=2).publishers.add(Publisher.objects.get(id=4))
+>>> Book.objects.get(id=3).publishers.add(Publisher.objects.get(id=4))
+>>> Book.objects.get(id=4).publishers.add(Publisher.objects.get(id=4))
+
+>>> Book.objects.get(id=1).publishers.add(Publisher.objects.get(id=5))
+>>> Book.objects.get(id=2).publishers.add(Publisher.objects.get(id=5))
+>>> Book.objects.get(id=3).publishers.add(Publisher.objects.get(id=5))
+>>> Book.objects.get(id=4).publishers.add(Publisher.objects.get(id=5))
+>>> Book.objects.get(id=5).publishers.add(Publisher.objects.get(id=5))
+
+>>> Book.objects.get(id=3).publishers.all()
+
+>>> Book.objects.get(id=3).publishers.remove(Publisher.objects.get(id=2))
+
+>>> Book.objects.get(id=2).publishers.add(Publisher.objects.get(id=5))
+
+>>> Publisher.objects.get(id=4).books.all()
+
+>>> Book.objects.get(id=5).publishers.all()
+
+

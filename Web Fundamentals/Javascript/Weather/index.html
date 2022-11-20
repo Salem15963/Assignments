@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-nav">
+            <h1>Dojo Weather</h1>
+            <ul>
+                <li onclick="myFunction()">
+                    <a href="#"> Burbank</a>
+                </li>
+                <li onclick="myFunction()">
+                    <a href="">Chicago</a></li>
+                <li onclick="myFunction()">
+                    <a href="">Dallas</a></li>
+            </ul>
+            </div>
+            <div class="bottom-nav">
+                <h2>San Jose</h2>
+                <div class="select-temp">
+                <h3>Show tempreture In</h3>
+                <select name="btn" id="measureunit" onchange="">
+                    <option value="Cel">C°</option>
+                    <option value="Fer">F°</option>
+                </select>
+                </div>
+            </div>
+    </header>
+        
+<main>
+    <div class="weather-god">
+        <div class="widgets">
+            <P>Today</P>
+            <img src="assets/some_rain.png" alt="rain">
+            <a1>some rain</a1>
+            <div class="hot-cold">
+                <div class="hot"><span class="degree">24</span>°</div>
+                <div class="cold">18°</div>
+            </div>
+        </div>
+        <div class="widgets">
+            <P>Tomorrow</P>
+            <img src="assets/some_sun.png" alt="sun">
+            <a1>some rain</a1>
+            <div class="hot-cold">
+                <div class="hot">27°</div>
+                <div class="cold">19°</div>
+            </div>
+        </div>
+        <div class="widgets"> 
+            <P>Friday</P>
+            <img src="assets/some_clouds.png" alt="clouds">
+            <a1>some clouds</a1>
+            <div class="hot-cold">
+                <div class="hot">21°</div>
+                <div class="cold">16°</div>
+            </div>
+        </div>
+        <div class="widgets">
+            <P>Saturday</P>
+            <img src="assets/some_sun.png" alt="sun">
+            <a1>some sun</a1>
+            <div class="hot-cold">
+                <div class="hot">26°</div>
+                <div class="cold">21°</div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="monster-cookie">
+            <img src="assets/cookie.png" alt="cookie">
+            <div class="cookie-time">
+                <h2 class="h2">Stop! Cookie Time</h2>
+                <p2 class="p2">We use cookies (sadly not the edible ones)
+                to personalize contents and adds, to provide social media
+                features and to analyes our traffic. <a href="#">Read more...</a>
+                </p2>
+            </div>
+                <button class="btn"  onclick="hideMe(this)">I Accept</button>
+    
+</footer>
+
+<script src="weather.js"></script>
+</body>
+</html>

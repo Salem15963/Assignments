@@ -1,0 +1,159 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#root{
+    width: 53%;
+    padding: 1%;
+    margin: 0 auto;
+    align-items: center;
+    height: 30px;
+}
+
+    nav{
+    box-shadow: 1px gray;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    padding: 1%;
+    align-items: center;
+    height: 38px;
+    background-color: gray;
+}
+
+nav input{
+    box-shadow: 2.5px 2.5px 2.5px 2.5px black;
+    
+}
+
+.search{
+width: 350px;
+height: 20px;
+}
+
+.button{
+    width: 40px;
+    height: 18px;
+    display: flex;
+    text-align: center;
+    background-color: rgb(43,121,228)
+}
+
+
+.Ninja h2{
+    margin: 10px 0px;
+}
+
+main{
+    display: flex;
+}
+
+.section{
+    display:flex ;
+    align-items: center;
+    justify-content: space-evenly;
+    border-style: groove;
+    border-color: black;
+    width: 420px;
+    height: 130px;
+    margin: 15px 15px 15px 0px ;
+    
+}
+
+.section2   {
+    display:flex ;
+    align-items: center;
+    justify-content: space-evenly;
+    border-style: groove;
+    border-color: black;
+    width: 420px;
+    height: 130px;
+    margin: 15px 15px 15px 0px ;
+    
+}
+
+p.content{
+   width: 208px;
+}
+
+.MMA{
+    font-size: 12px;
+    padding-right: 7px;
+    position: relative;
+    top: 40px;
+    left: 80px;
+    
+}
+
+.programmer{
+    font-size: 12px;
+    padding-right: 7px;
+    position: relative;
+    top: 40px;
+    left: 80px;
+}
+
+.h3{
+    font-size: 12px;
+    padding-right: 7px;
+    position: relative;
+    top: 15px;
+    right: 72px;
+    
+}
+
+.Ninja{
+    text-align: center;
+}
+
+.dojo{
+    width: 450px;
+    padding: 2%;
+    height: 150px;
+    border-style: groove;
+    border-color: 2px solid black;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: start;
+
+}
+
+.side-bar{
+    display:flex ;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-style: groove;
+    border-color: black;
+    width: 50%;
+    height: 100px;
+    margin: 15px ;
+}
+
+.side-bar button{
+    background-color: rgb(147,196,125); 
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.btn0{
+    background-color: rgb(43,121,228); 
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+
+}
+
+.section input{
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.section2 input{
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+
+.par
+{
+    padding: 6%;
+}

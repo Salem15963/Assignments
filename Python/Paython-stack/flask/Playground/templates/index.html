@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-color: linen;
+height: 1000px;
+width: auto;
+}
+
+h1 {
+color: maroon;
+margin-left: 40px;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+div {
+    background-color: {{happycolor}};
+    height: 15%;
+    width: 15%; 
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px; 
+}
+
+</style>
+</head>
+<body>
+
+<h1>Welcome</h1>
+
+{% for x in range(0,times): %}
+    <div>{{ x }}</div>
+{% endfor %}
+
+</body>
+</html>

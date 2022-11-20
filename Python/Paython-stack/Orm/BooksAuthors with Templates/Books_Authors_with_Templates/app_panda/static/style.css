@@ -1,0 +1,18 @@
+h1{
+padding-left: 10px;
+}
+
+.form-group{
+    display: flex;
+    justify-content: flex-start;
+    width: 280px;
+    padding-left: 10px;
+}
+
+.space{
+    margin-left: 50px;
+}
+
+.btn{
+margin-left: 90px;
+}

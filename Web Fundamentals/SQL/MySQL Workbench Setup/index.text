@@ -1,0 +1,3 @@
+SELECT * FROM users;    
+INSERT INTO users (user)
+VALUES ("Omar"), ("Salem");

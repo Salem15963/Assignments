@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plush star</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <header>
+            <div class="nav">
+                <nav><p>FREE PHONE GRIP ON SELECT PURCHASES</p></nav>
+            </div>
+
+            <div class="nav-1">
+                <span class="plush">Plush star</span>
+                <input class="search-bar" type="text" placeholder="Search..">
+                <span class="za3bot">0</span> 
+                
+                <img src="images/cart-dark.png" alt="shopping-cart">
+                <div class="topnav">
+                </div>
+            </div>
+
+            <div class="nav-2">
+            <ul>
+                <li class="tabs">Home</li>
+                <li class="tabs">New</li>
+                <li class="tabs">Product</li>
+                <li class="tabs">Soles</li>
+                <li class="tabs">Blogs</li>
+                <li class="tabs" onclick="doSomething()">Contact Us</li>
+
+            </ul>
+            </div>
+
+            <div class="nav-3">
+                <span>Plushy Store</span>
+            </div>
+
+            <div class="nav-4">
+                <label>62 Products, sorted by <strong id="sortMe">Best Selling</strong></label>
+                <div>
+                    <label>Sorted By</label>
+                    <select onchange="changeSort(value)">
+                        <option value="Best Selling">Best Selling</option>
+                        <option value="Price">Price</option>
+                        <option value="Recent">Recent</option>
+                    </select>
+                    
+                </div>
+            </div>
+        
+        </header>
+        <main>
+            <div class="product">
+                <img class="size" src="images/product-image.png" alt="Product">
+                <span>Mischief Mouse</span>
+                <input class="btn" type="button" value="Buy" onclick="funny()">
+            </div> 
+            <div class="product">
+                <img class="size" src="images/product-image.png" alt="Product">
+                <span>Shy Shrew</span>
+                <input class="btn" type="button" value="Buy"  onclick="funny()">
+            </div>
+            <div class="product">
+                <img class="size" src="images/product-image.png" alt="Product">
+                <span>Hangry Hamster</span>
+                <input class="btn" type="button" value="Buy"  onclick="funny()">
+            </div>
+            <div class="product">
+                <img class="size" src="images/product-image.png" alt="Product">
+                <span>Chilly Chinchilla</span>
+                <input class="btn" type="button" value="Buy"  onclick="funny()">
+            </div>
+        </main>
+        <footer>
+        
+        </footer>
+    </div>
+    <script src="exam.js"></script>
+</body>
+</html>

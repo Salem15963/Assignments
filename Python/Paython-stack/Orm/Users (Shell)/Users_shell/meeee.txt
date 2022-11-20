@@ -1,0 +1,44 @@
+        Run the shell and import your User model
+
+>>> from app_one.models import *
+
+        Query: Create 3 new users
+
+>>> Movie.objects.create(title="killer",description="Scary",release_date="2010-07-22 23:30")       
+>>> Movie.objects.create(title="Happy",description="Comedy",release_date="2011-08-2 20:40") 
+>>> Movie.objects.create(title="Queen",description="Drama",release_date="2021-09-30 15:30")
+
+
+         Query: Retrieve all the users
+
+>>> Movie.objects.all()
+
+          Query: Retrieve the last user
+
+>>> Movie.objects.last()
+
+
+            Query: Retrieve the first user
+
+>>> Movie.objects.first()
+
+
+            Query: Change the user with id=3 so their last name is Pancakes.
+
+c=Movie.objects.get(id=2)
+c.title="pancakes"
+c.save()
+
+             Query: Delete the user with id=2 from the database
+
+>>> C=Movie.objects.get(id=1)
+>>> C.delete()
+
+              
+              Query: Get all the users, sorted by their first name
+
+>>> Movie.objects.all().order_by("title")
+<QuerySet [<Movie: Movie object (3)>, <Movie: Movie object (2)>]>
+>>> Movie.objects.all().order_by("-title")
+<QuerySet [<Movie: Movie object (2)>, <Movie: Movie object (3)>]>
+>>>

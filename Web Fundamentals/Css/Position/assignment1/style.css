@@ -1,0 +1,58 @@
+.container{
+    width: 699px;
+    height: 450px;
+    border: 1px solid black;
+}
+.nav{
+    background-color: rgb(79, 123, 145);
+    display: flex;
+    height: 120px;
+    width: 700px;
+}
+.profile{
+    height: 100px;
+    position:absolute;
+    left:40px ;
+    top: 65px;
+    border: 5px solid rgb(252, 248, 248);
+    border-radius: 50%;    
+}
+.white{
+    height:60px;
+}
+.map{
+    height: 20px;
+    position: relative;
+    top: 45px;
+    right: 1px;
+    left: 1px;
+}
+h1{
+    font-size: 40px;
+    position: absolute;
+    left:50px; top:160px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gear{
+    height: 20px;
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+.a{
+    font-size: 17px
+    
+}
+.paragraph{
+    position: absolute;
+    top: 210px;
+    left:50px;
+}
+p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.seatle{
+    position: relative;
+    left:20px;
+}

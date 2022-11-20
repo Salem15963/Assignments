@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books/Authors with Templates</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form action="/Publisher" method="post">
+        {% csrf_token %}
+    <h1>Add a Author</h1>
+    <div class="form-group">
+        <label class="first" for="usr">First Name:</label>
+        <input class="space" type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+        <label class="first" for="usr">Last Name:</label>
+        <input class="space" type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+        <label for="comment">Notes:</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+    <button type="button" class="btn">Add</button>
+    </form>
+
+    <div class="container">           
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Jane Austen</td>
+                    <td>View</td>
+                </tr>
+            <tr>
+                <td>2</td>
+                <td>Emily Dickinson</td>
+                <td>View</td>
+            </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Fyodor Dostoevsky</td>
+                    <td>View</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bill Shekespear</td>
+                    <td>View</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Lau Tzu</td>
+                    <td>View</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        {% for Book in Books %}
+        <tr>
+            <td>{{ book.id }}</td>
+            <td>{{ book.name }}</td>
+            <td>{{ book.action }}</td>
+        </tr>
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.nav p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c2799e;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    height: 50px;
+}
+
+.nav-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav-1 span{
+    font-size: xx-large;
+}
+
+.search-bar{
+    width: 600px;
+    height:25px
+}
+
+.plush {
+
+    width: 146px;
+}
+
+.nav-2 ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    background-color: #dcdcdc;
+    height:45px;
+}
+
+.tabs{
+    width: 86px;
+}
+
+.nav-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #c2799e;
+    font-size: xx-large;
+    height: 75px;
+    width: 805px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.nav-4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    flex-direction: column;
+
+}
+
+.product span{
+    padding: 8px;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;   
+}
+
+.btn{
+    width: 55px;
+    height: 30px;
+    background-color: #c2799e;
+    color: white;
+    border-radius: 5px;
+}
+
+.size{
+    width: 180px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}

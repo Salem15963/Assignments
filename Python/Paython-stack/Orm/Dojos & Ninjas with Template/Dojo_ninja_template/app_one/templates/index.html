@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo_ninja_template</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <form action="/add_dojo" method="post">
+            {% csrf_token %}
+            <h2>Add a Dojo</h2>
+        <div class="form-group">
+                <label for="name">name:</label>
+                <input type="text" class="form-control" id="name" placeholder="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="city">city:</label>
+            <input type="text" class="form-control" id="city" placeholder="city" name="city" required>
+        </div>
+        <div class="form-group">
+            <label for="state">state:</label>
+            <input type="text" class="form-control" id="state" placeholder="state" name="state" required>
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox" name="remember" required> Agree to terms and conditions </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+            
+            <form action="/add_ninja/" method="post">
+                {% csrf_token %}
+                <h2>Add a Ninja</h2>
+                <div class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="First Name" name="firstname">
+                </div>
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name" name="lastname">
+            </div>
+            <div class="form-group">
+                <select class="form-select" name="select">
+                    {% for dojo in dojos %}
+                    <option value="{{dojo.id}}">{{dojo.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="remember" required> Agree to terms and conditions </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+    </div>
+    <div>
+        {% for dojo in dojos %}
+        <h2> Ninjas At The Painting {{dojo.name}} Dojo </h2> 
+        {% for ninja in dojo.ninjas.all %}
+        <ul>
+            <li>{{ninja.first_name}} {{ninja.last_name}}</li>
+        </ul>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</body>
+</html>

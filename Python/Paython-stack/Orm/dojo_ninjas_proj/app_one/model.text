@@ -1,0 +1,35 @@
+>>>  from myapp.models import *
+  File "<console>", line 1
+    from myapp.models import *
+IndentationError: unexpected indent
+>>> from myapp.models import *
+>>> Dojo.objects.get(id=1)
+<Dojo: Dojo object (1)>
+>>> Ninja.objects.create(first_name="Omar",last_name="Salem")
+<Ninja: Ninja object (1)>
+>>> Ninja.objects.create(first_name="ali",last_name="Salem")
+<Ninja: Ninja object (2)>
+>>>  Ninja.objects.create(first_name="zaid",last_name="Salem")
+  File "<console>", line 1
+    Ninja.objects.create(first_name="hana",last_name="Salem")
+IndentationError: unexpected indent
+>>> Ninja.objects.create(first_name="jane",last_name="Salem")
+<Ninja: Ninja object (3)>
+>>> Dojo.objects.get(id=3)
+<Dojo: Dojo object (3)>
+>>> Ninja.objects.create(first_name="hala",last_name="Salem")
+<Ninja: Ninja object (4)>
+>>> Ninja.objects.create(first_name="bana",last_name="Salem")
+<Ninja: Ninja object (5)>
+>>> Ninja.objects.create(first_name="noor",last_name="Salem")
+<Ninja: Ninja object (6)>
+>>> Dojo.objects.get(id=1)
+<Dojo: Dojo object (1)>
+>>> Ninja.objects.filter()
+<QuerySet [<Ninja: Ninja object (1)>, <Ninja: Ninja object (2)>, <Ninja: Ninja object (3)>, <Ninja: Ninja object (4)>, <Ninja: Ninja object (5)>, <Ninja: Ninja object (6)>]>
+>>> Dojo.objects.get(id=3)
+<Dojo: Dojo object (3)>
+>>> Ninja.objects.filter()
+<QuerySet [<Ninja: Ninja object (1)>, <Ninja: Ninja object (2)>, <Ninja: Ninja object (3)>, <Ninja: Ninja object (4)>, <Ninja: Ninja object (5)>, <Ninja: Ninja object (6)>]>
+>>>
+ Ninja.objects.last().dojo

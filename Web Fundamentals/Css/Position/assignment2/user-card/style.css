@@ -1,0 +1,120 @@
+.nav{
+    width: 1500px;
+    height: 60px;
+    background-color: gray;
+    display: flex;
+    align-content: center;
+    position: relative;
+    
+
+}
+
+.nav-title{
+    width: 100px;
+    height: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+    border: 1px dotted red;
+    
+}
+
+.nav-links{
+    width: 2200px;
+    height: 20px;
+    color: white;
+    list-style: none;
+    display: flex;
+    position: relative;
+    left: 500px;
+    border: 1px dotted red;
+    
+    
+}
+
+
+.active{
+    width: 100px;
+    height: 20px;
+    color: white;
+    border: 1px dotted red;
+}
+
+.btn{
+    width: 100px;
+    height: 25px;
+    background-color: aqua;
+    box-shadow: 7px 4px 4px black;
+    display: flex;
+    position:relative;
+    left: 700px;
+    
+}
+li{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px dotted red;
+   
+    
+    }
+    .container{
+        width: 699px;
+        height: 450px;
+        border: 1px solid black;
+    }
+    .nav{
+        background-color: rgb(79, 123, 145);
+        display: flex;
+        height: 120px;
+        width: 700px;
+    }
+    .profile{
+        height: 100px;
+        position:absolute;
+        left:40px ;
+        top: 65px;
+        border: 5px solid rgb(252, 248, 248);
+        border-radius: 50%;    
+    }
+    .white{
+        height:60px;
+    }
+    .map{
+        height: 20px;
+        position: relative;
+        top: 45px;
+        right: 1px;
+        left: 1px;
+    }
+    h1{
+        font-size: 40px;
+        position: absolute;
+        left:50px; top:160px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .gear{
+        height: 20px;
+        position: relative;
+        top: 5px;
+        right: 5px;
+    }
+    .a{
+        font-size: 17px
+        
+    }
+    .paragraph{
+        position: absolute;
+        top: 210px;
+        left:50px;
+    }
+    p{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .seatle{
+        position: relative;
+        left:20px;
+    }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users with Templates</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>All The Users</h1>
+<table  class="table table-condensed">
+    <thead>
+        <td>id</td>
+        <td>name</td>
+        <td>email</td>
+        <td>age</td>
+    </thead>
+    {% for user in users %}
+    <tr>
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }} {{ user.last }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.age }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<hr>
+<h2>Add a user</h2>
+<form action="Do/" method="POST">
+    {% csrf_token %}
+    <p>first name <input type="text" name="name"> last name <input type="text" name="last"></p>
+    <p>email <input type="text" name="email"> age <input type="text" name="age"></p>
+    <button type="Submit">Submit</button>
+</form>
+</body>
+</html>
+

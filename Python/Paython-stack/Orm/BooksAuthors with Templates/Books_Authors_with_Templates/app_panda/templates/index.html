@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books/Authors with Templates</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>Add a Book</h1>
+    <div class="form-group">
+        <label class="first" for="usr">Title:</label>
+        <input class="space" type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+        <label for="comment">Description:</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+    <button type="button" class="btn">Add</button>
+
+    <div class="container">           
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>C#</td>
+                    <td>View</td>
+                </tr>
+            <tr>
+                <td>2</td>
+                <td>Java</td>
+                <td>View</td>
+            </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Python</td>
+                    <td>View</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>PHP</td>
+                    <td>View</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Ruby</td>
+                    <td>View</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    {% for Book in Books %}
+    <tr>
+        <td>{{ book.id }}</td>
+        <td>{{ book.title }}</td>
+        <td>{{ book.action }}</td>
+    </tr>
+    {% endfor %}
+</body>
+</html>

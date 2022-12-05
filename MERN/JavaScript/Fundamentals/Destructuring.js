@@ -1,47 +1,47 @@
-// const cars = ['Tesla', 'Mercedes', 'Honda']
-// const [ randomCar ] = cars
-// const [ ,otherRandomCar ] = cars
-// //Predict the output
-// console.log(randomCar)
-// console.log(otherRandomCar)
+const cars = ['Tesla', 'Mercedes', 'Honda']
+const [ randomCar ] = cars
+const [ ,otherRandomCar ] = cars
+//Predict the output
+console.log(randomCar)
+console.log(otherRandomCar)
 
 // answer is Tesla >>> Mercedes /  predictions Tesla >>> Mercedes
 
-// const employee = {
-//     name: 'Elon',
-//     age: 47,
-//     company: 'Tesla'
-// }
-// const { name: otherName } = employee;
-// //Predict the output
-// console.log(name);
-// console.log(otherName);
+const employee = {
+    name: 'Elon',
+    age: 47,
+    company: 'Tesla'
+}
+const { name: otherName } = employee;
+//Predict the output
+console.log(name);
+console.log(otherName);
 
 
 // answer is name is not defined /  predictions Error
 
 
-// const person = {
-//     name: 'Phil Smith',
-//     age: 47,
-//     height: '6 feet'
-// }
-// const password = '12345';
-// const { password: hashedPassword } = person;  
-// //Predict the output
-// console.log(password);
-// console.log(hashedPassword);
+const person = {
+    name: 'Phil Smith',
+    age: 47,
+    height: '6 feet'
+}
+const password = '12345';
+const { password: hashedPassword } = person;  
+//Predict the output
+console.log(password);
+console.log(hashedPassword);
 
 // answer is 12345 >>>> undefined /  predictions 12345 >>>>> undefined 
 
 
-// const numbers = [8, 2, 3, 5, 6, 1, 67, 12, 2];
-// const [,first] = numbers;
-// const [,,,second] = numbers;
-// const [,,,,,,,,third] = numbers;
-// //Predict the output
-// console.log(first == second);
-// console.log(first == third);
+const numbers = [8, 2, 3, 5, 6, 1, 67, 12, 2];
+const [,first] = numbers;
+const [,,,second] = numbers;
+const [,,,,,,,,third] = numbers;
+//Predict the output
+console.log(first == second);
+console.log(first == third);
 
 
 // answer is false >>>> true /  predictions 2 >>> 5 >>> 2

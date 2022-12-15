@@ -1,22 +1,24 @@
 import React, { useState } from  'react';
     
     
-const UserForm = (props) => {
+const UserForm = () => {
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [hasBeenSubmitted, setHasBeenSubmitted] = useState(false);
     const [UsernameError, setUsernameError] = useState("");
     const [passwordError, setPasswordError] = useState("");
+    const [confirmpasswordError, setconfirmpasswordError] = useState("");
+    const [confirmpassword, setconfirmpassword] = useState("");
     const [emailError, setEmailError] = useState("");
 
 
     const handleUsername = (e) => {
         setUsername(e.target.value);
         if(e.target.value.length < 1) {
-            setUsernameError("Title is required!");
+            setUsernameError("User is required!");
         } else if(e.target.value.length < 3) {
-            setUsernameError("Title must be 3 characters or longer!");
+            setUsernameError("User must be 3 characters or longer!");
         } else {
             setUsernameError("");
         }
@@ -24,9 +26,9 @@ const UserForm = (props) => {
     const handleEmail = (e) => {
         setEmail(e.target.value);
         if(e.target.value.length < 1) {
-            setEmailError("Title is required!");
-        } else if(e.target.value.length < 3) {
-            setEmailError("Title must be 3 characters or longer!");
+            setEmailError("Email must not be empty!");
+        } else if(e.target.value.length < 5) {
+            setEmailError("Email must be 5 characters or longer!");
         } else {
             setEmailError("");
         }
@@ -34,17 +36,31 @@ const UserForm = (props) => {
     const handlePassword = (e) => {
         setPassword(e.target.value);
         if(e.target.value.length < 1) {
-            setPasswordError("Title is required!");
-        } else if(e.target.value.length < 3) {
-            setPasswordError("Title must be 3 characters or longer!");
+            setPasswordError("Password must not be empty");
+        } else if(e.target.value.length < 8) {
+            setPasswordError("Password must be more than 3 characters");
         } else {
             setPasswordError("");
+        }
+    }
+    const handleconfirmPassword = (e) => {
+        setconfirmpassword(e.target.value);
+        if(e.target.value.length < 1) {
+            setconfirmpasswordError("Password not empty");
+        } else if(e.target.value.length < 8) {
+            setconfirmpasswordError("Password must be 3 characters or longer!");
+        } else if(e.target.value !== password){
+        setconfirmpasswordError("Password must Match !!");
+        }
+        
+        else {
+            setconfirmpasswordError("");
         }
     }
     
     const createUser = (e) => {
         e.preventDefault();
-        const newUser = { username, email, password };
+        const newUser = { username, email, password, confirmpassword};
         console.log("Welcome", newUser);
         setHasBeenSubmitted( true );
     };
@@ -84,6 +100,15 @@ const UserForm = (props) => {
                 {
                     passwordError ?
                     <p style={{color:'red'}}>{ passwordError }</p> :
+                    ''
+                }
+                </div>
+                <div>
+                <label>Confirm Password: </label>
+                <input type="password" onChange={handleconfirmPassword} />
+                {
+                    confirmpasswordError ?
+                    <p style={{color:'red'}}>{ confirmpasswordError }</p> :
                     ''
                 }
             </div>

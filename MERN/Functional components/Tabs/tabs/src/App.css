@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #03203c;
+}
+
+.wrapper {
+  max-width: 950px;
+  width: 100%;
+  padding: 40px 50px 40px 40px;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper header {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.wrapper nav {
+  position: relative;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper nav label {
+  border: 1px solid #80a4c5;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  color: #17a2b8;
+  font-size: 17px;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.wrapper nav label:hover {
+  background: rgba(23, 162, 184, 0.3);
+}
+
+.content .title {
+  display: none;
+  font-size: 21px;
+  font-weight: 500;
+  margin: 30px 0 10px 0;
+}
+
+.content p {
+  padding: 20px 0;
+  text-align: justify;
+}
+
+.content.active .title {
+  opacity: 1;
+  height: auto;
+}
+
+.content.active p {
+  text-align: justify;
+  opacity: 1;
+  height: auto;
+}
+
+/* .content {
+  display: none;
+  background: #fff;
+} */

@@ -1,0 +1,24 @@
+div.output-div {
+  background-color: aliceblue;
+}
+.box {
+  /* width: 100px;
+  height: 100px; */
+  display: inline-block;
+  vertical-align: top;
+  outline: 1px solid grey;
+  /* background-color: blue; */
+  margin: 10px 10px;
+  padding: 10px;
+}
+
+input {
+  width: 90px;
+  margin: 0 5px;
+}
+.boxy {
+  /* background-color: aliceblue; */
+  display: inline;
+  border-radius: 5px;
+  padding: 5px;
+}

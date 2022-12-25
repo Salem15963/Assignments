@@ -46,4 +46,4 @@
 
 20)db.students.updateMany({}, {$unset: {lucky_number: ""}})
 
-21)db.students.updateMany({}, {$set: {updatedAt: new Date().toISOString()}})
+21)db.students.updateMany({}, {$set: {updatedAt: new Date().toISOString()}}).

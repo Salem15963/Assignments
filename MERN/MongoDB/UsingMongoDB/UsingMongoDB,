@@ -1,12 +1,12 @@
-1) use My_DB
+1) use my_first_db
 
 2) db.createCollection("students")
 
-3) db.students.insert({name:"Omar", home_state:"Nablus", lucky_number:5, birthday:{month:7, day:22, year:1992}})
-   db.students.insert({name:"Zaid", home_state:"Nablus", lucky_number:4, birthday:{month:3, day:15, year:1989}})
-   db.students.insert({name:"Fadi", home_state:"Bethlehem", lucky_number:1, birthday:{month:6, day:30, year:1991}})
-   db.students.insert({name:"Aya", home_state:"Jerusalem", lucky_number:17, birthday:{month:3, day:11, year:1991}})
-   db.students.insert({name:"Ali", home_state:"Ramallah", lucky_number:77, birthday:{month:10, day:17, year:1993}})
+3) db.students.insert({name:"Ali", home_state:"Ramallah", lucky_number:1, birthday:{month:10, day:22, year:1994}})
+   db.students.insert({name:"Zaid", home_state:"Tulkarem", lucky_number:3, birthday:{month:6, day:1, year:1988}})
+   db.students.insert({name:"Fadi", home_state:"Bethlehem", lucky_number:5, birthday:{month:3, day:30, year:1970}})
+   db.students.insert({name:"Aya", home_state:"Khalil", lucky_number:17, birthday:{month:5, day:16, year:1999}})
+   db.students.insert({name:"Omar", home_state:"Nablus", lucky_number:77, birthday:{month:10, day:17, year:1993}})
 
 4) db.students.find({}).pretty()
 
@@ -20,11 +20,11 @@
 
 9) db.students.updateMany({}, {$set: {interests: ['coding', 'brunch', 'MongoDB']}})
 
-10)db.students.update({name: "Omar"}, {$push: {interests:"swimming"}})
+10)db.students.update({name: "Ali"}, {$push: {interests:"swimming"}})
    db.students.update({name: "Zaid"}, {$push: {interests:"sky diving"}})
    db.students.update({name: "Fadi"}, {$push: {interests:"hourse riding"}})
    db.students.update({name: "Aya"}, {$push: {interests:"football"}})
-   db.students.update({name: "Ali"}, {$push: {interests:"volleyball"}})
+   db.students.update({name: "Omar"}, {$push: {interests:"volleyball"}})
 
 11)db.students.update({name: "Omar"},{$push: {interests: "taxes"}})
 
@@ -34,16 +34,16 @@
 
 14)db.students.remove({home_state: "Nablus"}, false)
 
-15)db.students.remove({name: "Zaid"}, false)
+15)db.students.remove({name: "ali"}, false)
 
-16)db.students.remove({lucky_number: {$gt: 4}}, true)
+16)db.students.remove({lucky_number: {$gt: 5}}, true)
 
 17)db.students.updateMany({}, {$set: {number_of_belts: 0}})
 
-18)db.students.updateMany({home_state: "Ramallah"}, {$set: {number_of_belts: +1}})
+18)db.students.updateMany({home_state: "Nablus"}, {$set: {number_of_belts: +1}})
 
 19)db.students.updateMany({}, {$rename: {number_of_belts: "belts_earned"}})
 
 20)db.students.updateMany({}, {$unset: {lucky_number: ""}})
 
-21)db.students.updateMany({}, {$set: {updatedAt: new Date().toISOString()}}).
+21)db.students.updateMany({}, {$set: {updatedAt: new Date().toISOString()}})

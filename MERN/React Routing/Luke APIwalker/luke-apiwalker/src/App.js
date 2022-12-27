@@ -1,10 +1,12 @@
-import './App.css';
-import Users from './Components/People';
-
+import StarWarsAPI from "./Components/StarWarsAPI";
+    
 function App() {
+
   return (
-<Users/>
+    <>
+      <Luke/>
+    </>
   );
 }
-
+    
 export default App;

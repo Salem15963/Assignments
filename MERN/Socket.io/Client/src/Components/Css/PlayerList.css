@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+}
+
+.t-head{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.tbottom{
+display: flex;
+justify-content: space-evenly;
+text-align: center;
+
+}
+
+.links{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
